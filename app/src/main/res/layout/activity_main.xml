@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    app:layoutDescription="@xml/scene_main">
+
+    <FrameLayout
+        android:id="@+id/bottomCard"
+        android:layout_height="0dp"
+        android:layout_width="0dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_baseline_done"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/ic_baseline_close"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/topCard"
+        android:layout_height="0dp"
+        android:layout_width="0dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/likeButton"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_baseline_done"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/passButton"
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/ic_baseline_close"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/likeIcon"
+        android:src="@drawable/ic_baseline_favorite_border"
+        android:tint="#fbc02d"
+        android:background="@drawable/backround_circle"
+        android:layout_height="0dp"
+        android:layout_width="0dp" />
+
+    <ImageView
+        android:id="@+id/passIcon"
+        android:src="@drawable/ic_baseline_close"
+        android:background="@drawable/backround_circle"
+        android:tint="#e64a19"
+        android:layout_height="0dp"
+        android:layout_width="0dp"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
