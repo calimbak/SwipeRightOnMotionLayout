@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                     R.id.offScreenPass,
                     R.id.offScreenLike -> {
                         motionLayout.progress = 0f
-                        motionLayout.setTransition(R.id.rest, R.id.like)
+                        motionLayout.setTransition(R.id.rest, currentId)
                         viewModel.swipe()
                     }
                 }
